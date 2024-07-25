@@ -1,0 +1,194 @@
+*{
+	font-family: "Inter", sans-serif;
+	margin: 0;
+    box-sizing: 0;
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+	background-color: #14161D;
+	color: white;
+	padding: 15px 100px;
+}
+
+.barra-pesquisa{
+	padding: 0px 120px;
+	width: 30rem;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: transparent;
+}
+
+.input-texto{
+	padding: 8px 12px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background-color: #484848;
+	border-radius: 16px;
+}
+
+.input-texto i{
+	color: #F3F3F3;
+}
+
+.input-texto input{
+	background-color: transparent;
+    width: 30rem;
+	border: none;
+	color: #F3F3F3;
+	font-size: 18px;
+}
+
+.main {
+    width: 100%;
+    height: 110vh;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    background-color: #181B24;
+    padding: 0px 0px; 
+}
+
+.sideleft{
+    flex-basis: 10%;
+    padding: 1rem 3.2rem;
+}
+
+.sideleft-options{
+    padding: 0.4rem;
+}
+
+.feed{
+    flex-basis: 0%;
+}
+.feed__tweetbox{
+    padding: 0px 8px 8px;
+    max-width: 100%;
+    background-color: #14161D;
+    margin-top: 10px;
+    margin-right: 8px;
+    border-radius: 10px;
+    border: 1px;
+    border-color: #484848;
+}
+.feed__formulario{
+    padding: 1rem;
+    text-align: right;
+}
+.feed__formulario textarea{
+    display: block;
+    width: 28rem;
+    height: 6rem;
+    border: none;
+    outline: none;
+    background-color: #14161D;
+    color: #f3f3f3;
+    resize: none;
+}
+
+.feed__conteudoBotoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feed__postarbotao{
+    background-color: #22A2F2;
+    color: #F3F3F3;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 20px;
+}
+.feed__imagens{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:10px;
+}
+
+.feed__posts{
+    display: flex;
+    flex-direction: column;
+}
+
+.feed__tweet{
+    display: flex;
+    flex-direction: column;
+    background-color: #14161D;
+    margin-top: 2%;
+    padding: 3rem 0rem 1rem 1rem;
+    border-radius: 12px;
+    border-color: #484848;
+    border: #484848;
+    max-width: 100%;
+    color: #F3F3F3;
+}
+
+.tweet__imagem_post_um{
+    padding: 20px 30px;
+}
+
+.tweet__imagem_post_um img{
+    max-width: 500px;
+}
+
+.tweet__usuario_foto img {
+    max-width: 40px;
+    border-radius: 20px;
+}
+
+.tweet__usuario_foto{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    color: #F3F3F3;
+    font-size: 24px;
+}
+
+.tweet__usuario_post_um{
+    display: flex;
+    gap: 12rem;
+    margin-bottom: 14px;
+}
+
+.tweet__icons_post{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.sideright{
+    flex-basis: 30%;
+    color: #f3f3f3;
+}
+
+.sideright img{
+    max-width: 50px;
+}
+.sideright__lista{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.sideright-options{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 23px;
+    align-items: center;
+}
+
+.sideright-options img {
+    border-radius: 40px;
+}
+
+.adicionar{
+    background-color: #222222;
+    color: #22A2F2;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 8px 8px 8px;
+}

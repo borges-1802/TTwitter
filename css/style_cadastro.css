@@ -1,12 +1,12 @@
-*{
-	font-family: "Inter", sans-serif;
-	margin: 0;
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
     padding: 0;
     box-sizing: 0;
     list-style-type: none;
 }
 
-.container{
+.container {
     display: flex;
     background-color: #181B24;
     height: 100vh;
@@ -17,7 +17,7 @@
 
 }
 
-.left{
+.left {
     background-color: #F3F3F3;
     width: 30.4rem;
     height: 33rem;
@@ -25,7 +25,7 @@
     border-radius: 20px;
 }
 
-.left__formulario{
+.left__formulario {
     font-family: sans-serif;
     padding-left: 70px;
     padding-right: 70px;
@@ -36,11 +36,11 @@
     justify-content: center;
 }
 
-h2{
+h2 {
     margin-bottom: 25px;
 }
 
-.input{
+.input {
     width: 20rem;
     height: 2rem;
     top: 7.5px;
@@ -50,12 +50,13 @@ h2{
     position: relative;
 }
 
-.form_group{
+.form_group {
     display: flex;
     position: relative;
     margin-bottom: 16px;
-    .label{
-        position:absolute;
+
+    .label {
+        position: absolute;
         z-index: 1;
         left: 0.8rem;
         font-size: 0.7rem;
@@ -65,32 +66,43 @@ h2{
     }
 }
 
-.password_eye{
+.password_eye {
     position: relative;
 }
 
-.password_eye img{
+.password_eye img {
     cursor: pointer;
     position: absolute;
     right: 3%;
     bottom: 0%;
 }
 
-#checkbox{
+
+#checkbox {
     align-items: center;
     flex-direction: row;
 }
 
-.check{
+.check {
     font-size: 14px;
     flex-direction: row;
 }
 
-#termos{
+#termos {
     color: #105F74;
 }
 
-#cadastrar{
+.input-password {
+    width: 20rem;
+    height: 2rem;
+    top: 7.5px;
+    padding: 2px 5px 2px 15px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+    position: relative;
+}
+
+#cadastrar {
     margin-top: 12px;
     border-radius: 8px;
     border: none;
@@ -104,7 +116,7 @@ h2{
     gap: 10px;
 }
 
-#login{
+#login {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -122,8 +134,8 @@ h2{
 }
 
 
-@media screen and (max-width: 900px){
-    .container{
+@media screen and (max-width: 900px) {
+    .container {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -131,18 +143,18 @@ h2{
         height: cover;
     }
 
-    body{
+    body {
         background-color: #181B24;
     }
 
-    .left{
+    .left {
         min-width: 18.5rem;
         max-width: 23rem;
         max-height: 40rem;
         align-items: center;
     }
 
-    .input{
+    .input {
         width: 15rem;
         height: 2rem;
         top: 6px;
@@ -152,17 +164,17 @@ h2{
         position: relative;
     }
 
-    .logo{
+    .logo {
         max-width: 80px;
         max-height: 83px;
     }
 
-    .check{
+    .check {
         font-size: 12px;
         flex-direction: row;
     }
-    
-    #cadastrar{
+
+    #cadastrar {
         margin-top: 12px;
         border-radius: 8px;
         border: none;
@@ -175,8 +187,8 @@ h2{
 
 
     }
-    
-    #login{
+
+    #login {
         text-align: center;
         margin-top: 0px;
         margin-bottom: 20px;
@@ -191,4 +203,16 @@ h2{
         padding-bottom: 8px;
         gap: 10px;
     }
+
+    .input-password {
+        width: 15rem;
+        height: 2rem;
+        top: 6px;
+        padding: 2px 5px 2px 15px;
+        border-radius: 8px;
+        border: 1px solid #222222;
+        position: relative;
+    }
+
+
 }

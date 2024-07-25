@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login TTwiter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login TTwiter</title>
     <link rel="stylesheet" href="../css/style_login.css">
-	<link rel="icon" href="../Logo TT.png" type="image/png">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="../Logo TT.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <img src="../LogoLogin.svg" alt="logo" class="logo">
-        
+
         <div class="right">
             <form class="right__formulario">
                 <h2>Bem vindo a plataforma TTwiter</h2>
@@ -23,22 +25,21 @@
                     <label class="label">Email</label>
                     <input type="email" class="input" placeholder="example@email.com">
                 </div>
-                
+
                 <div class="form_group">
                     <label class="label">Senha</label>
                     <div class="password_eye">
-                    <input type="password" class="input-password" placeholder="&#8226 &#8226 &#8226 &#8226 &#8226 &#8226 &#8226">
-                    <img src="../eyeOn.png" class="olho_ligado">
+                        <input type="password" class="input-password"
+                            placeholder="&#8226 &#8226 &#8226 &#8226 &#8226 &#8226 &#8226">
+                        <img src="../eyeOn.png" class="olho_ligado">
+                    </div>
                 </div>
-            </div>
 
                 <a id="esqueci">Esqueci minha senha</a>
-                
-                <a href="index.html">
-                    <button id="entrar">Entrar</button>
-                </a><a href="cadastro.html">
-                    <button id="registrar">Registrar</button>
-                </a>
+
+                <button id="entrar">Entrar</button>
+                <button id="registrar">Registrar</button>
+
                 <label class="check">
                     <input type="checkbox" id="checkbox">
                     Li e estou de acordo com os <a id="termos">Termos</a> e <a id="termos">Condições de Uso</a>.
@@ -49,4 +50,5 @@
     </div>
     <script src="../js/login.js"></script>
 </body>
+
 </html>

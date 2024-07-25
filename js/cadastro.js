@@ -1,13 +1,29 @@
-function mostrarSenha(){
-    var inputPass = document.getElementById('senha')
-    var btnShowPass = document.getElementById('btn-senha')
+const password = document.querySelector('.input-password')
+const icon = document.querySelector('.olho_ligado')
 
-    if(inputPass.type === 'password'){
-        inputPass.setAttribute('type','text')
-        btnShowPass.classList.replace('olho_ligado','fa fa-eye-slash')
+icon.addEventListener('click', showHide)
+
+function showHide() {
+    if (password.type === 'password') {
+        password.setAttribute('type', 'text')
+        icon.classList.add('hide')
+        icon.setAttribute('src', '../eyeOff.png')
     }
-    else{
-        inputPass.setAttribute('type','password')
-        btnShowPass.classList.replace('fa fa-eye-slash','olho_ligado')
+    else {
+        password.setAttribute('type', 'password')
+        icon.classList.remove('hide')
+        icon.setAttribute('src', '../eyeOn.png')
     }
 }
+
+const cadastroBtn = document.querySelector('#registrar');
+cadastroBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.href = './cadastro.html'
+})
+
+const entrarBtn = document.querySelector('#entrar');
+entrarBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.href = './index.html'
+})
